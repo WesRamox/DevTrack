@@ -5,6 +5,10 @@
     "moduleResolution": "bundler",
     "target": "ES2023",
     "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@devtrack/db": ["packages/db/src"]
+    },
     "jsx": "react-jsx",
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
