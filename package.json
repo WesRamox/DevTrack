@@ -1,39 +1,26 @@
 {
-  "name": "devtrack",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "npm run dev -w apps/web"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/WesRamox/DevTrack.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/WesRamox/DevTrack/issues"
-  },
-  "homepage": "https://github.com/WesRamox/DevTrack#readme",
-  "devDependencies": {
-    "@types/node": "^25.2.0",
-    "@types/pg": "^8.16.0",
-    "prisma": "^7.3.0",
-    "tsx": "^4.21.0",
-    "typescript": "^5.9.3"
-  },
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
+  "name": "my-app",
+  "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
   "dependencies": {
-    "@prisma/adapter-pg": "^7.3.0",
-    "@prisma/client": "^7.3.0",
-    "dotenv": "^17.2.3",
-    "pg": "^8.18.0"
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

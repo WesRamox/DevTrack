@@ -1,177 +1,36 @@
-# 👨‍💻 Dev Job Tracker
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A **job application tracker built specifically for developers**, designed to organize tech job applications by **stack**, **seniority**, and **real hiring stages used in software engineering processes**.
+## Getting Started
 
-The goal is to replace generic spreadsheets with a tool built **by developers, for developers**.
+First, run the development server:
 
----
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## 🎯 Project Goal
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-This project was created with a focus on:
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-* Professional portfolio
-* Fullstack skill demonstration
-* Product thinking
-* Real-world architecture used in modern applications
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
----
+## Learn More
 
-## 🧠 Problem
+To learn more about Next.js, take a look at the following resources:
 
-Developers applying to multiple jobs often struggle to keep track of:
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-* Where they already applied
-* Which hiring stage they are in
-* Which tech stacks generate more responses
-* Coding challenges, repositories, and feedback
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-This usually ends up in messy spreadsheets or scattered notes.
+## Deploy on Vercel
 
----
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## 💡 Solution
-
-**Dev Job Tracker** allows developers to:
-
-* Register and manage tech job applications
-* Track each step of the technical hiring process
-* Store technical details related to each role
-* Analyze patterns and metrics during the job search
-
----
-
-## 👤 Target Audience
-
-* Frontend, Backend, and Fullstack Developers
-* Junior, Mid-level, and Senior engineers
-* Developers actively searching for tech jobs
-
----
-
-## 🧱 Features (MVP)
-
-### Authentication
-
-* Sign in with **GitHub**
-* Sign in with **Google**
-
-### Job Applications
-
-* Company
-* Role (Frontend / Backend / Fullstack)
-* Seniority (Junior / Mid / Senior)
-* Main tech stack (React, Node, Java, etc)
-* Contract type (CLT / PJ)
-* Work mode (Remote / Hybrid / On-site)
-* Job posting link
-* Salary range (optional)
-* Technical notes
-
-### Application Status (Tech-oriented)
-
-* Applied
-* Recruiter Screen
-* Tech Interview
-* Coding Challenge
-* System Design
-* Offer
-* Rejected
-
-### General Capabilities
-
-* Create, update, and delete job applications
-* Update application status
-* Filter jobs by status, stack, and seniority
-
----
-
-## 🔌 API Routes (Express)
-
-### Auth
-
-* **GET** `/auth/me` → Returns the authenticated user
-
-### Jobs
-
-* **GET** `/jobs` → List all jobs for the authenticated user
-* **POST** `/jobs` → Create a new job application
-* **GET** `/jobs/:id` → Get job application details
-* **PUT** `/jobs/:id` → Update a job application
-* **DELETE** `/jobs/:id` → Delete a job application
-
-### Status
-
-* **PATCH** `/jobs/:id/status` → Update job application status
-
-### Dashboard
-
-* **GET** `/dashboard/summary` → General metrics (total, by status, by stack)
-
----
-
-## 📊 Dashboard (Initial)
-
-* Total applications
-* Applications by status
-* Applications by tech stack
-
----
-
-## 🚀 Roadmap
-
-* Status change history (timeline)
-* Follow-up reminders
-* Coding challenge organization (links & repositories)
-* Advanced metrics by stack and seniority
-* Follow-up message templates
-* AI-powered insights (mock)
-
----
-
-## 🧰 Tech Stack
-
-### Frontend
-
-* Next.js (App Router)
-* TypeScript
-* Tailwind CSS
-* ShadCN UI
-* NextAuth (Auth.js)
-
-### Backend
-
-* Node.js
-* Express
-* TypeScript
-
-### Database
-
-* PostgreSQL
-* Prisma ORM (centralized schema at project root)
-
-### Infrastructure
-
-* Docker
-* Docker Compose
-
----
-
-## 🏗️ Architecture
-
-* Monorepo structure
-* Decoupled frontend and backend
-* Shared Prisma schema at the root
-* API protected via JWT
-
----
-
-## 🗣️ Quick Pitch
-
-> A job tracker built for developers, considering tech stack, seniority, and real technical hiring stages.
-
----
-
-## 📌 Project Status
-
-🚧 In development
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
